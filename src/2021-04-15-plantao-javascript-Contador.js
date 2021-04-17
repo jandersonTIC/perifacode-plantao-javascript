@@ -12,16 +12,14 @@ contadorRegressivo.setCallbackTimeout(function () {
   contadorRegressivo.resetTimer();
 });
 
-contadorRegressivo.setCallbackTimeInterval(
-  function (contador) {
-    if (contador.getCurrentTime() == 26) {
-      contador.stopTimer();
-      console.log(`Contagem: ${contador.getCurrentTime()}`);
-    } else {
-      console.log(`Contagem: ${contador.getCurrentTime()}`);
-    }
-  }.bind(null, contadorRegressivo)
-);
+contadorRegressivo.setCallbackTimeInterval(function (self) {
+  if (self.getCurrentTime() == 26) {
+    self.stopTimer();
+    console.log(`Contagem: ${self.getCurrentTime()}`);
+  } else {
+    console.log(`Contagem: ${self.getCurrentTime()}`);
+  }
+});
 
 contadorRegressivo.startTimer();
 console.log(`Contagem: ${contadorRegressivo.getCurrentTime()}`);

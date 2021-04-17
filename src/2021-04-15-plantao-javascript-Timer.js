@@ -46,7 +46,7 @@ module.exports = class Timer {
 
   //define a função de callback ‘callbackTimeInterval’ a ser executada após cada intervalo definido em ‘timerInterval’ ou, se não configurado, utilizar o padrão de 100 milissegundos;
   setCallbackTimeInterval(_callbackTimeInterval) {
-    this.callbackTimeInterval = _callbackTimeInterval;
+    this.callbackTimeInterval = _callbackTimeInterval.bind(null, this);
   }
 
   //retorna o tempo corrente ‘currentTime’. Este retorno pode ser a qualquer momento, seja no começo, durante a contagem ou no fim;
