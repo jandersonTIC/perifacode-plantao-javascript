@@ -1,0 +1,22 @@
+{
+  "name": "perifacode-plantao-javascript",
+  "version": "1.0.0",
+  "description": "Repositório com códigos criados durante o Plantão de JavaScript do [perifaCode](https://perifacode.com/).",
+  "main": "src/2021-04-24-api-login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jandersonTIC/perifacode-plantao-javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jandersonTIC/perifacode-plantao-javascript/issues"
+  },
+  "homepage": "https://github.com/jandersonTIC/perifacode-plantao-javascript#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
