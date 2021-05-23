@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculadora.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="container">
+        <div id="calculadora">
+            <div id="result">
+                <div id="historico">
+                    <p id="historico-valor"></p>
+
+                </div>
+                    <div id="saida"></div>
+            </div>
+            <div id="teclado">
+                <button class="operador" id="limpar" onclick="clean()">C</button>
+                <button class="operador" id="retornar">CE</button>
+                <button class="operador" id="apagar" onclick="back()"><</button>
+                <button class="operador" id="/" onclick="insert('/')">/</button>
+                <button class="numero" id="7" onclick="insert('7')">7</button>
+                <button class="numero" id="8" onclick="insert('8')">8</button>
+                <button class="numero" id="9" onclick="insert('9')">9</button>
+                <button class="operador" id="*" onclick="insert('*')">*</button>
+                <button class="numero" id="4" onclick="insert('4')">4</button>
+                <button class="numero" id="5" onclick="insert('5')">5</button>
+                <button class="numero" id="6" onclick="insert('6')">6</button>
+                <button class="operador" id="-" onclick="insert('-')">-</button>
+                <button class="numero" id="1" onclick="insert('1')">1</button>
+                <button class="numero" id="2" onclick="insert('2')">2</button>
+                <button class="numero" id="3" onclick="insert('3')">3</button>
+                <button class="operador" id="+" onclick="insert('+')">+</button>
+                <button class="ponto" id="ponto" onclick="insert('.')">.</button>
+                <button class="numero" id="0" onclick="insert('0')">0</button>
+                <button class="operador" id="vazio"></button>
+                <button class="operador" id="=" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./2021-05-22-calculadora.js"></script>
+</body>
+</html>
